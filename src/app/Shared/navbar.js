@@ -1,5 +1,8 @@
 "use client";
+import { usePathname } from "next/navigation";
+
 export default function Navbar() {
+  const pathname = usePathname();
   return (
     <div className="min-h-full">
       <nav className="bg-custom-blue mt-6">
@@ -12,9 +15,9 @@ export default function Navbar() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                  <a href="/" className="rounded-md bg-gray-900 px-3 py-2 text-3xl font-serif font-bold text-white" aria-current="page">Home</a>
-                  <a href="Team" className="rounded-md px-3 py-2 text-3xl font-serif font-bold text-white hover:bg-gray-700 hover:text-white">Team</a>
-                  <a href="Projects" className="rounded-md px-3 py-2 text-3xl font-serif font-bold text-white hover:bg-gray-700 hover:text-white">Projects</a>
+                  <a href="/" className={`rounded-md px-3 py-2 text-3xl font-serif font-bold ${pathname === "/" ? "bg-gray-900 text-white" : "text-white hover:bg-gray-700 hover:text-white"}`} aria-current="page">Home</a>
+                  <a href="Team" className={`rounded-md px-3 py-2 text-3xl font-serif font-bold ${pathname === "/Team" ? "bg-gray-900 text-white" : "text-white hover:bg-gray-700 hover:text-white"}`}>Team</a>
+                  <a href="Projects" className={`rounded-md px-3 py-2 text-3xl font-serif font-bold ${pathname === "/Projects" ? "bg-gray-900 text-white" : "text-white hover:bg-gray-700 hover:text-white"}`}>Projects</a>
                   {/* <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
                   {/* <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Reports</a> */}
                 </div>
@@ -44,11 +47,11 @@ export default function Navbar() {
       </nav>
 
       {/* <!-- Mobile menu, show/hide based on menu state --> */}
-      <div className="md:hidden" id="mobile-menu" style={{ display: 'none' }}>
+      <div className="md:hidden bg-custom-blue " id="mobile-menu" style={{ display: 'none' }}>
         <div className="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-          <a href="#" className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-          <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-          <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+          <a href="/" className="block rounded-md px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+          <a href="Team" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Team</a>
+          <a href="Projects" className="block rounded-md px-3 py-2 text-base font-medium text-white hover:bg-gray-700 hover:text-white">Projects</a>
           {/* <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
           {/* <a href="#" className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Reports</a> */}
         </div>
