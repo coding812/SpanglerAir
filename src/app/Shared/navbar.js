@@ -2,19 +2,19 @@
 export default function Navbar() {
   return (
     <div className="min-h-full">
-      <nav className="bg-gray-600 mt-4">
+      <nav className="bg-custom-blue mt-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <div className="shrink-0">
-                <img className="size-32 mt-4" src="snow_flame.png" alt="Your Company" />
+                <img className="h-24 w-auto lg:h-36 lg:mt-4  " src="snow_flame.png" alt="Your Company" />
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
-                  <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-                  <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                  <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                  <a href="#" className="rounded-md bg-gray-900 px-3 py-2 text-3xl font-serif font-bold text-white" aria-current="page">Home</a>
+                  <a href="#" className="rounded-md px-3 py-2 text-3xl font-serif font-bold text-white hover:bg-gray-700 hover:text-white">Team</a>
+                  <a href="#" className="rounded-md px-3 py-2 text-3xl font-serif font-bold text-white hover:bg-gray-700 hover:text-white">Projects</a>
                   {/* <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a> */}
                   {/* <a href="#" className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Reports</a> */}
                 </div>
