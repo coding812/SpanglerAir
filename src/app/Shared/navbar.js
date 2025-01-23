@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <div className="min-h-full">
+    <div className="min-h-full bg-slate-400">
       <nav className="bg-custom-blue mt-6">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
           <div className="flex h-16 items-center justify-between">
