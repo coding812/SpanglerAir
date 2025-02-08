@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
       <head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/temperatures_3653255.png" />
+        <link rel="icon" href="/temp_icon.png" />
       </head>
-      <body className= {`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body className= {`${geistSans.variable} ${geistMono.variable} antialiased bg-custom-blue`}>
       <Navbar/>
         {children}
       </body>
