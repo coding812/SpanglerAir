@@ -18,10 +18,8 @@ export default function Team() {
   return (
     <div className="min-h-full">
       <div
-        className="absolute  inset-0 bg-no-repeat md:bg-fixed parallax-bg bg-center md:bg-top md:bg-cover"
-        style={{backgroundImage: "url('/family-portrait.jpg')"
-        , opacity: opacity
-        }}
+        className="pl-4 absolute inset-0 bg-no-repeat md:bg-fixed parallax-bg bg-center md:bg-top md:bg-cover"
+        style={{backgroundImage: "url('/HVAC-repair-man.jpg')", opacity: opacity, }}
       >
       </div>
       <div className="flex relative md:mt-12 mt-64 text-slate-100 p-4 ">
@@ -47,7 +45,7 @@ export default function Team() {
             <p className='indent-20 p-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className='indent-20 p-4'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p className='indent-20 p-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
           <div className="flex justify-center mt-4 ">
