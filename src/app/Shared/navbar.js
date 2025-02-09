@@ -25,8 +25,8 @@ export default function Navbar() {
   return (
     <div className="flex">
       <div className="fixed top-9 right-12 z-50 hidden md:block">
-          <button className="inline-flex items-center justify-center border align-middle select-none text-center duration-300 ease-in disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none py-2 px-4 shadow-sm hover:shadow-md bg-gradient-to-b from-red-600 to-red-700 hover:from-red-400 hover:to-red-500 border-stone-900 text-white text-xl font-serif font-bold rounded-full transition antialiased" >
-            Call us!
+          <button className=" inline-flex items-center justify-center border align-middle select-none text-center duration-300 ease-in disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none py-2 px-4 shadow-sm hover:shadow-md bg-gradient-to-b from-red-600 to-red-700 hover:from-red-400 hover:to-red-500 border-stone-900 text-white text-xl font-serif font-bold rounded-full transition antialiased" >
+            Call us! 727-481-0000
           </button>
         </div>
       <nav className="" >
@@ -69,9 +69,11 @@ export default function Navbar() {
           {/* <a href="/" className="block rounded-md px-3 py-2 font-medium text-lg text-white" aria-current="page">Home</a> */}
           {/* <a href="About-Us" className="block rounded-md px-3 py-2 font-medium text-lg text-white hover:bg-gray-700 hover:text-white">About Us</a> */}
           <div>
-            <button style={{ opacity: 1 }} className="inline-flex items-center justify-center border align-middle select-none text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none py-2 px-4 shadow-sm hover:shadow-md bg-gradient-to-b from-red-600 to-red-700 hover:from-red-400 hover:to-red-500 relative border-stone-900 text-white text-xl font-serif font-bold rounded-full transition antialiased">
-              Call us!
-            </button>
+            <a href="tel:727-481-0000" >
+              <button  className="md:hidden mt-4 inline-flex items-center justify-center border align-middle select-none text-center duration-300 ease-in disabled:opacity-50 disabled:shadow-none disabled:cursor-not-allowed focus:shadow-none py-2 px-4 md:py-4 md:px-8 shadow-sm hover:shadow-md bg-gradient-to-b from-red-600 to-red-700 hover:from-red-400 hover:to-red-500 relative border-stone-900 text-white text-xl md:text-2xl font-serif font-bold rounded-full transition antialiased">
+                Call us Today!
+              </button>
+            </a>
           </div>
         </div>
       </div>
