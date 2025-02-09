@@ -40,7 +40,7 @@ export default function Navbar() {
               </div>
               <div className="">
                 <div className="flex items-baseline space-x-4">
-                  <h1 className="md:text-4xl text-2xl font-serif font-bold text-white">Spangler Heating & Air</h1>
+                  <h1 className="md:text-4xl text-2xl font-serif font-bold text-white">Spangler Air</h1>
                   {/* <a href="/" className={`rounded-md px-3 py-2 text-3xl font-serif font-bold ${pathname === "/" ? "bg-gray-900 text-white" : "text-white hover:bg-gray-700 hover:text-white"}`} aria-current="page">Home</a> */}
                   {/* <a href="About-Us" className={`rounded-md px-3 py-2 text-3xl font-serif font-bold ${pathname === "/About-Us" ? "bg-gray-900 text-white" : "text-white hover:bg-gray-700 hover:text-white"}`}>About Us</a> */}
                 </div>

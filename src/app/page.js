@@ -10,6 +10,7 @@ export default function Home() {
         <img className="md:size-48 size-16" src="https://cdn.brandfetch.io/id6Y58thif/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Lennox Logo" />
         <img className="md:size-48 size-16" src="https://cdn.brandfetch.io/id88hr4ntD/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Goodman Logo" />
         <img className="md:size-48 size-16" src="https://cdn.brandfetch.io/id0LLXtLoM/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" alt="Daikin Logo" />
+        <img className="md:w-48 md:h-20 w-20 h-12 md:mt-12" src="https://images.carriercms.com/image/upload/h_200,q_auto,f_auto/v1565698634/icp/icpusa/icons/icp-logo-white.png" alt="ICP International Comfort Products Logo" />
       </div>
       <div className='md:text-3xl flex mt-4 mb-4 justify-center text-lg '>
         <div className='inline-block w-3/4 text-white rounded-xl bg-custom-blue/55 '>
